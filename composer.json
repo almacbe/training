@@ -1,0 +1,31 @@
+{
+    "name": "almacbe/training",
+    "description": "Training examples",
+    "keywords": ["kata","TDD", "PHP", "training"],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alfonso Machado",
+            "email": "almacbe@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.3"
+    }
+}
