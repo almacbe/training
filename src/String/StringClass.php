@@ -1,6 +1,6 @@
 <?php
 
-namespace Example;
+namespace String;
 
 class StringClass
 {

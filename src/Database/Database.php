@@ -1,6 +1,6 @@
 <?php
 
-namespace Example;
+namespace Database;
 
 class Database
 {
