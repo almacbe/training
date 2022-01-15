@@ -6,3 +6,4 @@ composer.phar
 bin/
 coverage/
 .php-cs-fixer.cache
+.phpunit.result.cache
