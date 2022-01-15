@@ -4,7 +4,7 @@ namespace IdentityDocument;
 
 class IdentityNumberValidator
 {
-    public function validate (IdentityDocument $document): bool
+    public function validate(IdentityDocument $document): bool
     {
         if ($document instanceof SpanishIdentityDocument) {
             if ($document->getNumber() === '12345678R') {

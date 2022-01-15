@@ -1,6 +1,5 @@
 <?php
 
-
 namespace HandleExceptions;
 
 class ErrorLogger

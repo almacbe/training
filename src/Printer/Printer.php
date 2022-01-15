@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Printer;
 
 class Printer
