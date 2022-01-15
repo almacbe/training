@@ -4,15 +4,8 @@ namespace RRSS;
 
 class GetFollowersOfUser
 {
-    /**
-     * @var UserRepository
-     */
-    private $userRepository;
-
-    /**
-     * @var TwitterClient
-     */
-    private $twitterClient;
+    private UserRepository $userRepository;
+   private TwitterClient $twitterClient;
 
     public function __construct(UserRepository $userRepository, TwitterClient $twitterClient)
     {

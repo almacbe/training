@@ -4,10 +4,7 @@ namespace RRSS;
 
 class UserRepository
 {
-    /**
-     * @var MysqlConnection
-     */
-    private $connection;
+    private MysqlConnection $connection;
 
     public function __construct(MysqlConnection $connection)
     {

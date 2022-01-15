@@ -4,16 +4,16 @@ namespace String;
 
 class StringClass
 {
-    /**
-     * @var string
-     */
-    private $string;
+    private string $string;
 
     public function __construct(string $string)
     {
         $this->string = $string;
     }
 
+    /**
+     * @throws StringIndexOutOfBoundsException
+     */
     public function substring(int $beginIndex, int $endIndex): string
     {
         if ($beginIndex < 0) {
@@ -34,14 +34,5 @@ class StringClass
                 ? $this->string
                 : substr($this->string, $beginIndex, $subLen);
         }
-    }
-}
-
-class StringIndexOutOfBoundsException extends \Exception
-{
-    public function __construct($index)
-    {
-        $message = sprintf('Index out of bounds %s', $index);
-        parent::__construct($message);
     }
 }

@@ -4,10 +4,7 @@ namespace RRSS;
 
 class HttpClient
 {
-    /**
-     * @var string
-     */
-    private $apiKey;
+    private string $apiKey;
 
     public function __construct(string $apiKey)
     {

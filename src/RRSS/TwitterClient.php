@@ -4,10 +4,7 @@ namespace RRSS;
 
 class TwitterClient
 {
-    /**
-     * @var HttpClient
-     */
-    private $httpClient;
+    private HttpClient $httpClient;
 
     public function __construct(HttpClient $httpClient)
     {

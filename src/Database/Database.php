@@ -4,9 +4,9 @@ namespace Database;
 
 class Database
 {
-    private $isUpdateReady;
-    private $isSyncCompleted;
-    private $isCacheEnabled;
+    private bool $isUpdateReady;
+    private bool $isSyncCompleted;
+    private bool $isCacheEnabled;
 
     public function __construct()
     {
@@ -33,7 +33,7 @@ class Database
     /**
      * A simple method handling the database operation related task
      */
-    public function update(bool $isForceUpdate)
+    public function update(bool $isForceUpdate): void
     {
         // isUpdateReady is class level variable
         if ($this->isUpdateReady) {
