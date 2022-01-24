@@ -2,6 +2,7 @@
 
 namespace Bird;
 
-class Chicken
+class Penguin
 {
+
 }

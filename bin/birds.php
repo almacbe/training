@@ -3,14 +3,17 @@
 
 require_once(__DIR__.'/../vendor/autoload.php');
 
-// 1. Dibuja una avestruz
-
-// 2. Dibuja una gallina.
-
-// 3. Dibuja un pajaro.
+// Crea Patos, pajaros, loros
 
 $birds = []; // list of birds;
-foreach ($birds as $bird) {
-    // todo
-    // Muestra por patanlla nombre del pajaro y posición.
+
+while(true) {
+    $choose = rand(0, count($birds));
+
+    $bird = $birds[$choose];
+    $bird->eat();
+    $bird->walk();
+    $bird->fly();
+
+    sleep(1);
 }
